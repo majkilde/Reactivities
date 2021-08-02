@@ -6,6 +6,7 @@ namespace Domain
     {
         public Guid Id { get; set; }
 
+        // [Required] // Make validation in the Application layer - not the domain layer
         public string Title { get; set; }
 
         public DateTime Date { get; set; }
@@ -17,6 +18,6 @@ namespace Domain
         public String City { get; set; }
 
         public String Venue { get; set; }
-        
+
     }
 }
